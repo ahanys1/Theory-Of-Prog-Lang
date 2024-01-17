@@ -1,2 +1,2 @@
 # Theory-Of-Prog-Lang
-Repository for Theory of programming Languages
+Repository for CMPT 331L - Theory of programming Languages
