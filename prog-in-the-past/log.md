@@ -15,3 +15,4 @@
 |2/18/24| 7 | 0 |Visual Basic Complete, that wasn't so bad|
 |2/18/24| 9 | 0 |why the f**k does fortran have line limits|
 |2/19/24| 11 | 0 |Fortran done, I'm done for the night that was rough|
+|2/19/24| 13 | 0 |Pascal complete, that wasn't too bad. this is getting repetitive.|
