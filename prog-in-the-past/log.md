@@ -16,3 +16,5 @@
 |2/18/24| 9 | 0 |why the f**k does fortran have line limits|
 |2/19/24| 11 | 0 |Fortran done, I'm done for the night that was rough|
 |2/19/24| 13 | 0 |Pascal complete, that wasn't too bad. this is getting repetitive.|
+|2/19/24| 15 | 0 |After fiddling around with Scala for 2 hours in both VSC and IntelliJ I am resortin gto an online IDE|
+|2/19/24| 16 | 0 |Scala: pain in the ass to setup, but really easy to use. Done|
