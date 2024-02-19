@@ -13,3 +13,5 @@
 |2/18/24| 5| 0 |Screw it using an online IDE for visual BASIC, will just download and put the code in the repo after|
 |2/18/24| 5.5 | 0 |This is starting to feel like OS with the late night cramming|
 |2/18/24| 7 | 0 |Visual Basic Complete, that wasn't so bad|
+|2/18/24| 9 | 0 |why the f**k does fortran have line limits|
+|2/19/24| 11 | 0 |Fortran done, I'm done for the night that was rough|
