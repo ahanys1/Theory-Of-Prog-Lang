@@ -1,4 +1,4 @@
-//yeah, I used an online IDE bc it was a pain in the ass to get it working in here
+
 object JDoodle {
 
     def encrypt(text: String, shift: Int): String = {
@@ -27,8 +27,8 @@ object JDoodle {
         .mkString // Convert the decrypted characters back to a string
     }
     
-    def solve(str: String): List[String] = {
-        (1 to 25).map(rot => decrypt(str, rot)).toList
+    def solve(str: String, rotCount: Int = 25): List[String] = {
+        (1 to rotCount).map(rot => decrypt(str, rot)).toList
     }
     
     def main(args: Array[String]): Unit = {
@@ -38,7 +38,7 @@ object JDoodle {
         println(s"Encrypted: $encrypted")
         val decrypted = decrypt("Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.", 12)
         println(s"Decrypted: $decrypted")
-        val cracked = solve("Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.")
+        val cracked = solve("Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.", 26)
         println("Solved:")
         for ((crack, index) <-cracked.zipWithIndex){ //this is really cool, gets the index with the item as a pair
             println(s"rot: ${index + 1}: $crack")

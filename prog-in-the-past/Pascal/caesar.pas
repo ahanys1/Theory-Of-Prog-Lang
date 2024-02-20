@@ -49,15 +49,15 @@ begin
     Decrypt := inputStr;
 end;
 
-function Solve(inputStr: string): TStringArray;
+function Solve(inputStr: string; rotCount: integer): TStringArray; //tried to do default value, but it's too complex in pascal. I would have to overload the function
 var
     rot: integer;
     solutions: array of string;
 begin
-    SetLength(solutions, 25); // Initialize array to hold solutions for all rotations
+    SetLength(solutions, rotCount); // Initialize array to hold solutions for all rotations
 
     // Loop through all rotations
-    for rot := 1 to 25 do
+    for rot := 1 to rotCount do
     begin
         // Decrypt with current rotation and store the result
         solutions[rot - 1] := Decrypt(inputStr, rot); // Corrected function call
@@ -74,7 +74,7 @@ begin //printouts
     writeln('Original: You go tell that vapid existentialist quack Freddy Nietzsche that he can just bite me, twice.');
     writeln('Encrypted: ', Encrypt('You go tell that vapid existentialist quack Freddy Nietzsche that he can just bite me, twice.', 46));
     writeln('Decrypted: ', Decrypt('Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.', 12));
-    cracked := Solve('Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.');
+    cracked := Solve('Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.', 26);
     writeln('Solved: ');
     for i := 0 to High(cracked) do
     begin

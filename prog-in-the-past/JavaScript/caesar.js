@@ -35,9 +35,9 @@ function decrypt(str, rot){
     return result;
 }
 
-function solve(str){
+function solve(str, rotCount = 25){
     let solutions = [];
-    for (let rot = 1; rot <=25; rot++){ //loop through all rotations
+    for (let rot = 1; rot <=rotCount; rot++){ //loop through all rotations
         let possible = decrypt(str, rot);
         solutions.push(possible);
     }
@@ -47,7 +47,7 @@ function solve(str){
 console.log("Original: You go tell that vapid existentialist quack Freddy Nietzsche that he can just bite me, twice.");
 console.log("Encrypted: ", encrypt("You go tell that vapid existentialist quack Freddy Nietzsche that he can just bite me, twice.", 46));
 console.log("Decrypted: ", decrypt("Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.", 12));
-let cracked = solve("Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.");
+let cracked = solve("Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.", 25);
 console.log("Solved: ");
 for (let i in cracked){
     console.log(`Rot: ${parseInt(i) + 1}: ${cracked[i]}`);

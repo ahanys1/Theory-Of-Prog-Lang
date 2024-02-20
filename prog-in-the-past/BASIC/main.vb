@@ -47,10 +47,10 @@ Public Class CaesarCipher
     End Function    
     
     ' Solve Function
-    Public Shared Function Solve(ByVal input As String) As List(Of String)
+    Public Shared Function Solve(ByVal input As String, Optional ByVal rotCount as Integer = 25) As List(Of String)
         Dim solutions As New List(Of String)
 
-        For rot As Integer = 1 To 25
+        For rot As Integer = 1 To rotCount
             Dim possible As String = Decrypt(input, rot)
             solutions.Add(possible)
         Next
@@ -61,7 +61,7 @@ Public Class CaesarCipher
     Public Shared Sub Main()
         Dim encryptedText As String = Encrypt("You go tell that vapid existentialist quack Freddy Nietzsche that he can just bite me, twice.", 46)
         Dim decryptedText As String = decrypt("Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.", 12)
-        Dim cracked As List(Of String) = Solve("Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.")
+        Dim cracked As List(Of String) = Solve("Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq.", 26)
         
         Console.WriteLine("Original: " & "You go tell that vapid existentialist quack Freddy Nietzsche that he can just bite me, twice.")
         Console.WriteLine("Encrypted: " & encryptedText)

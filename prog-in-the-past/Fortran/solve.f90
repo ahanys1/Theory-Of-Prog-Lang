@@ -5,6 +5,7 @@ program Solve
     character(len=93), parameter :: ENCRYPTED_STRING = &
         "Kag sa fqxx ftmf hmbup qjuefqzfumxuef cgmow Rdqppk Zuqfleotq ftmf tq omz vgef nufq yq, fiuoq."
     integer, parameter :: ALPHABET_SIZE = 26
+    integer, parameter :: ROTCOUNT = 25
     
     ! Variables
     character(len=len(ENCRYPTED_STRING)) :: decrypted_string
@@ -17,7 +18,7 @@ program Solve
     strLen = len_trim(ENCRYPTED_STRING)
     
     ! Decrypt all rotations
-    do shift = 0, ALPHABET_SIZE - 1
+    do shift = 0, ROTCOUNT
         do i = 1, strLen
             if (ENCRYPTED_STRING(i:i) >= 'A' .and. ENCRYPTED_STRING(i:i) <= 'Z') then
                 decrypted_string(i:i) = char(mod(ichar(ENCRYPTED_STRING(i:i)) - ichar('A') - &
@@ -34,7 +35,7 @@ program Solve
     
     ! Print decrypted strings for all rotations
     print *, "Encrypted: ", ENCRYPTED_STRING
-    do shift = 0, ALPHABET_SIZE - 1
+    do shift = 0, ROTCOUNT
         print *, "rot:", shift, ": ", decrypted_strings(shift + 1)
     end do
 end program Solve
