@@ -16,9 +16,11 @@
 |2/18/24| 9 | 1 |why the f**k does fortran have line limits|
 |2/19/24| 11 | 2 |Fortran done, I'm done for the night that was rough|
 |2/19/24| 13 | 3 |Pascal complete, that wasn't too bad. this is getting repetitive.|
-|2/19/24| 15 | 3 |After fiddling around with Scala for 2 hours in both VSC and IntelliJ I am resortin gto an online IDE|
+|2/19/24| 15 | 3 |After fiddling around with Scala for 2 hours in both VSC and IntelliJ I am resorting to an online IDE|
 |2/19/24| 16 | 4 |Scala: pain in the ass to setup, but really easy to use. Done|
 |2/19/24| 19 | 4 |COBOL is a crazy language. found a great video from FreeCodeCamp.org that is helping me though|
 |2/19/24| 20 | 4 |Right decided I'm also using an online IDE for COBOL|
 |2/19/24| 22 | 4 |this. makes. NO. SENSE.|
-|2/19/24| 23 | 4 |Just realized I had the solve function wrong for all languages, fixing now before finishing COBOL|
+|2/20/24| 23 | 4 |Just realized I had the solve function wrong for all languages, fixing now before finishing COBOL|
+|2/20/24| 24 | 4 |Solve fixed, added default variable of 25 where possible without too much effort|
+|2/20/24| 25 | 4 |giving up on COBOL for now, moving to the report|

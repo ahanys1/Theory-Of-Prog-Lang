@@ -1,8 +1,7 @@
 program Caesar;
 
-// Define a type for dynamic array of strings
 type
-    TStringArray = array of string; // thank you to chatGPT for providing this fix. I was originally trying just array of string, but puttin gthis at the top and changing below made it work
+    TStringArray = array of string; // thank you to chatGPT for providing this fix. I was originally trying just array of string, but putting this at the top and changing below made it work
 
 // Function to encrypt a string using Caesar cipher
 function Encrypt(inputStr: string; shift: integer): string;
@@ -60,7 +59,7 @@ begin
     for rot := 1 to rotCount do
     begin
         // Decrypt with current rotation and store the result
-        solutions[rot - 1] := Decrypt(inputStr, rot); // Corrected function call
+        solutions[rot - 1] := Decrypt(inputStr, rot);
     end;
 
     // Return the array of solutions
