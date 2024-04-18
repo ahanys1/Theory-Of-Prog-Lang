@@ -38,7 +38,7 @@ function solve(str, rotCount = 25){
 //printouts
 console.log("Original: Pack my box with five dozen liquor jugs... then try to explain it to the TSA."); //thanks ChatGPT for this one, that's pretty good
 console.log("Encrypted: ", encrypt("Pack my box with five dozen liquor jugs... then try to explain it to the TSA.", 46));
-console.log("Decrypted: " + decrypt("Bmow yk naj iuft ruhq palqz xucgad vgse... ftqz fdk fa qjbxmuz uf fa ftq FEM.", 12))
+console.log("Decrypted: " + decrypt("Bmow yk naj iuft ruhq palqz xucgad vgse... ftqz fdk fa qjbxmuz uf fa ftq FEM.", 12));
 let cracked = solve("Bmow yk naj iuft ruhq palqz xucgad vgse... ftqz fdk fa qjbxmuz uf fa ftq FEM.", 25);
 console.log("Solved: ");
 for (let i in cracked){ //yes, there is a loop here. Since it'se used for printouts, I hope that's alright
